@@ -12,8 +12,8 @@ env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
-production = 'root@localhost:22'
-dest_path = '/var/www'
+production = 'root@wernermendizabal.com:22'
+dest_path = '/var/www/html'
 
 # Rackspace Cloud Files configuration settings
 env.cloudfiles_username = 'my_rackspace_username'
@@ -21,7 +21,7 @@ env.cloudfiles_api_key = 'my_rackspace_api_key'
 env.cloudfiles_container = 'my_cloudfiles_container'
 
 # Github Pages configuration
-env.github_pages_branch = "gh-pages"
+env.github_pages_branch = "master"
 
 # Port for `serve`
 PORT = 8000
