@@ -27,9 +27,7 @@ output.write(
 Date: {1} {2}
 Category: Art
 Tags: Everyday, Art, Drawing
-picture: images/{0}.jpg
-minipicture: images/mini/{0}.jpg
-tinypicture: images/tiny/{0}.jpg
+picture: {0}.jpg
 """.format(epoch_time, date, time))
 
 output.close()
@@ -40,9 +38,11 @@ base_filename = os.path.basename(image_filename)
 base_filename = epoch_time
 
 copyfile(image_filename, 'content/images/{0}.jpg'.format(epoch_time))
+copyfile(image_filename, 'content/images/small/{0}.jpg'.format(epoch_time))
 copyfile(image_filename, 'content/images/mini/{0}.jpg'.format(epoch_time))
-copyfile(image_filename, 'content/images/tiny/{0}.jpg'.format(epoch_time))
+copyfile(image_filename, 'content/images/icon/{0}.jpg'.format(epoch_time))
 
 print 'content/images/{0}.jpg'.format(epoch_time)
-print 'content/images/mini/{0}.jpg 840x341'.format(epoch_time)
-print 'content/images/tiny/{0}.jpg 351x176'.format(epoch_time)
+print 'content/images/small/{0}.jpg - 840x341'.format(epoch_time)
+print 'content/images/mini/{0}.jpg - 351x176  '.format(epoch_time)
+print 'content/images/icon/{0}.jpg - 51x51'.format(epoch_time)

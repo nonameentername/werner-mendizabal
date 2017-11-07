@@ -21,5 +21,6 @@ def remove_ignore_error(filename):
 
 remove_ignore_error(filename)
 remove_ignore_error('content/images/{0}.jpg'.format(epoch_time))
+remove_ignore_error('content/images/small/{0}.jpg'.format(epoch_time))
 remove_ignore_error('content/images/mini/{0}.jpg'.format(epoch_time))
-remove_ignore_error('content/images/tiny/{0}.jpg'.format(epoch_time))
+remove_ignore_error('content/images/icon/{0}.jpg'.format(epoch_time))
