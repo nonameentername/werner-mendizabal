@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+
 AUTHOR = u'werner m'
 SITENAME = u'werner mendizabal'
 SITEURL = 'http://wernermendizabal.com'
@@ -33,7 +35,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 3
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+if 'RELATIVE_URLS' in os.environ:
+    RELATIVE_URLS = True
 
 THEME = 'html5up-future-imperfect'
 FEED_ALL_RSS = 'rss'
