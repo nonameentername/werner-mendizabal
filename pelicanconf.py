@@ -10,7 +10,7 @@ SITEURL = 'http://wernermendizabal.com'
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
 
@@ -31,8 +31,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-#DEFAULT_PAGINATION = 10
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 if 'RELATIVE_URLS' in os.environ:
