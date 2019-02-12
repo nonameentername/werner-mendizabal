@@ -6,7 +6,7 @@ import os
 
 AUTHOR = u'werner m'
 SITENAME = u'werner mendizabal'
-SITEURL = 'http://wernermendizabal.com'
+SITEURL = 'https://wernermendizabal.com'
 
 PATH = 'content'
 
