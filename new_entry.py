@@ -8,7 +8,7 @@ from shutil import copyfile
 from time import gmtime, strftime
 
 if len(sys.argv) != 2:
-    print 'Usage: {0} <name>'.format(sys.argv[0])
+    print ('Usage: {0} <name>'.format(sys.argv[0]))
     exit()
 
 image_filename = sys.argv[1]
@@ -17,7 +17,7 @@ epoch_time = int(time.time())
 
 filename = 'content/{0}.md'.format(epoch_time)
 
-output = open(filename, 'wb')
+output = open(filename, 'w')
 
 date = strftime("%Y-%m-%d", gmtime())
 time = strftime("%H:%M:%S", gmtime())
@@ -30,9 +30,7 @@ Tags: Everyday, Art, Drawing, Krita
 picture: {0}.jpg
 """.format(epoch_time, date, time))
 
-output.close()
-
-print filename
+print (filename)
 
 base_filename = os.path.basename(image_filename)
 base_filename = epoch_time
