@@ -7,6 +7,8 @@ import os
 AUTHOR = u'werner m'
 SITENAME = u'werner mendizabal'
 SITEURL = 'https://wernermendizabal.com'
+if os.environ.get('PELICAN_DEV'):
+    SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
